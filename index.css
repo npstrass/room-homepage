@@ -17,59 +17,42 @@ section {
   font-size: 12px;
 }
 
-h1 {
-    font-size: 2.25rem;
-    font-weight: 700;
-    color: var(--black);
+main {
+    display: flex;
+    flex-direction: column;
 }
 
-h2 {
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .35rem;
-    color: var(--black);
+section {
+    font-size: 0;
+    display: grid;
 }
 
-p {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.75rem;
-    color: var(--dark-gray);
+section:first-of-type {
+    grid-template-columns: 1.5fr 1fr;
 }
 
-.shop-now {
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: .75rem;
-    font-weight: 600;
-    margin-top: 3rem;
-    color: var(--black);
-}
-
-.shop-now::after {
-    content: url(images/icon-arrow.svg);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 3rem;
+section:last-of-type {
+    grid-template-columns: 1fr 1.5fr 1fr;
 }
 
 img {
     width: 100%;
-}
-
-.hero-component {
-    display: flex; 
-    flex-direction: column;
-}
-
-.hero-component img {
-    height: 360px;
     object-fit: cover;
-    object-position: left;
 }
 
-.text-container {
-    padding: 4rem 3rem;
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.no-2,
+.no-3 {
+    display: none;
 }
