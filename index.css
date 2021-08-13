@@ -45,8 +45,29 @@ nav ul {
 }
 
 nav li {
+  position: relative;
   color: var(--white);
   margin-right: 2rem;
+}
+
+nav li::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 4px;
+  background-color: var(--white);
+  transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+nav li:hover {
+  cursor: pointer;
+}
+
+nav li:hover::after {
+    width: 80%;
 }
 
 section {
@@ -89,6 +110,11 @@ img {
   padding: 20px 25px;
 }
 
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--very-dark-gray);
+}
+
 h1 {
   font-size: 2.75rem;
   font-weight: 700;
@@ -121,6 +147,11 @@ p {
   transform: translateY(-50%);
   content: url(images/icon-arrow.svg);
   margin-left: 3rem;
+}
+
+.shop-now:hover {
+    cursor: pointer;
+    color: var(--very-dark-gray)
 }
 
 .gallery-text-container {
