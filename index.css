@@ -32,24 +32,51 @@ section:first-of-type {
 }
 
 section:last-of-type {
-    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-columns: 1fr 1.25fr 1fr;
+    align-items: center;
 }
 
 img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
+    font-weight: 700;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .35rem;
 }
 
 p {
     font-size: 1rem;
+    font-weight: 500;
+}
+
+.shop-now {
+    margin-top: 3rem;
+    letter-spacing: .75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.shop-now::after {
+    content: url(images/icon-arrow.svg);
+    margin-left: 3rem;
+}
+
+.gallery-text-container {
+    padding: 7rem;
+}
+
+section:last-of-type .text-container {
+    padding: 3rem;
 }
 
 .no-2,
