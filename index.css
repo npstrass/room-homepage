@@ -67,7 +67,7 @@ nav li:hover {
 }
 
 nav li:hover::after {
-    width: 80%;
+  width: 80%;
 }
 
 section {
@@ -111,8 +111,8 @@ img {
 }
 
 .btn:hover {
-    cursor: pointer;
-    background-color: var(--very-dark-gray);
+  cursor: pointer;
+  background-color: var(--very-dark-gray);
 }
 
 h1 {
@@ -150,8 +150,8 @@ p {
 }
 
 .shop-now:hover {
-    cursor: pointer;
-    color: var(--very-dark-gray)
+  cursor: pointer;
+  color: var(--very-dark-gray);
 }
 
 .gallery-text-container {
@@ -216,11 +216,17 @@ section:last-of-type .text-container {
   }
 
   .menu {
+    height: 20px;
+    width: 30px;
+    transform: translateY(-5px);
     z-index: 2;
   }
 
   .close {
+    height: 30px;
+    width: 30px;
     z-index: 4;
+    transform: translateY(7.5px);
   }
 
   nav {
@@ -243,5 +249,9 @@ section:last-of-type .text-container {
   nav li {
     color: var(--black);
     font-weight: 700;
+  }
+
+  .display-none {
+    display: none;
   }
 }
