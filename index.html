@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>room</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>room</title>
+  </head>
+  <body>
+    <main>
+      <div class="container galleryImg"></div>
+      <div class="container galleryText"></div>
+      <div class="container bottomLeft">
+        <img src="images/image-about-dark.jpg" alt="" />
+      </div>
+      <div class="container bottomCenter"></div>
+      <div class="container bottomRight">
+        <img src="images/image-about-light.jpg" alt="" />
+      </div>
+      <div class="btnWrapper">
+        <div class="btn left">
+          <img src="images/icon-angle-left.svg" alt="left" />
+        </div>
+        <div class="btn right">
+          <img src="images/icon-angle-right.svg" alt="right" />
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const heroOne = {
+        photo: `url(images/desktop-image-hero-1.jpg)`,
+        title: 'Discover innovative ways to decorate',
+        description: 'We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with out collection and make your property a reflection of you and what you love.',
+      }
+
+      const heroTwo = {
+        photo: `url(images/desktop-image-hero-2.jpg)`,
+        title: '',
+        description: '',
+      }
+
+      const heroThree = {
+        photo: `url(images/desktop-image-hero-3.jpg)`,
+        title: '',
+        description: '',
+      }
+      // document.querySelector('.galleryImg').style.content = 'url(images/desktop-image-hero-2.jpg)'
+    </script>
+  </body>
 </html>
