@@ -60,3 +60,19 @@ btnRight.addEventListener("click", () => {
 btnLeft.addEventListener("click", () => {
   prev();
 });
+
+document.querySelector('.menu').addEventListener('click', () => {
+    document.querySelector('.menu').classList.add('displayNone')
+    document.querySelector('.logo').classList.add('displayNone')
+    document.querySelector('.close').classList.remove('displayNone')
+    document.querySelector('.nav').classList.remove('displayNone')
+    document.querySelector('.navWrapper').style.background = '#fff'
+})
+
+document.querySelector('.close').addEventListener('click', () => {
+    document.querySelector('.menu').classList.remove('displayNone')
+    document.querySelector('.logo').classList.remove('displayNone')
+    document.querySelector('.close').classList.add('displayNone')
+    document.querySelector('.nav').classList.add('displayNone')
+    document.querySelector('.navWrapper').style.background = 'transparent'
+})
