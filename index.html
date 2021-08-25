@@ -10,14 +10,33 @@
   <body>
     <main>
       <div class="container galleryImg"></div>
-      <div class="container galleryText"></div>
+
+      <div class="container galleryText">
+        <h1 id="galleryTextHeader" class="galleryTextHeader"></h1>
+        <p id="galleryTextBody" class="galleryTextBody"></p>
+        <p class="galleryTextLink">Shop now</p>
+      </div>
+
       <div class="container bottomLeft">
         <img src="images/image-about-dark.jpg" alt="" />
       </div>
-      <div class="container bottomCenter"></div>
+
+      <div class="container bottomCenter">
+        <p class="aboutTitle">About our furniture</p>
+        <p class="aboutBody">
+          Our multifunctional collection blends designs and function to suit
+          your individual taste. Make each room unique, or pick a cohesive theme
+          that best expresses your interests and what inspires you. Find the
+          furniture pieces you need, from traditional to contemporary styles or
+          anything in between. Product specialists are available to help you
+          create your dream space.
+        </p>
+      </div>
+
       <div class="container bottomRight">
         <img src="images/image-about-light.jpg" alt="" />
       </div>
+
       <div class="btnWrapper">
         <div class="btn left">
           <img src="images/icon-angle-left.svg" alt="left" />
@@ -28,25 +47,6 @@
       </div>
     </main>
 
-    <script>
-      const heroOne = {
-        photo: `url(images/desktop-image-hero-1.jpg)`,
-        title: 'Discover innovative ways to decorate',
-        description: 'We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with out collection and make your property a reflection of you and what you love.',
-      }
-
-      const heroTwo = {
-        photo: `url(images/desktop-image-hero-2.jpg)`,
-        title: '',
-        description: '',
-      }
-
-      const heroThree = {
-        photo: `url(images/desktop-image-hero-3.jpg)`,
-        title: '',
-        description: '',
-      }
-      // document.querySelector('.galleryImg').style.content = 'url(images/desktop-image-hero-2.jpg)'
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
